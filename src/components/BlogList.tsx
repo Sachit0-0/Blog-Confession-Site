@@ -26,21 +26,30 @@ const BlogList: React.FC = () => {
   return (
     <div className="scroll-container">
       <Navbar bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
+      <Container>
+        <div className="d-flex justify-content-between align-items-center w-100">
+          <Navbar.Brand href="#home">
+            <img
+              src={process.env.PUBLIC_URL + '/brain.png'}
+              alt="Icon"
+              width="30"
+              height="30"
+            />{' '}
+            SAYY
+          </Navbar.Brand>
+          <Nav className="ml-auto">
+            <Nav.Link href="#home">Confession</Nav.Link>
+            <Nav.Link href="#features">Write Yours</Nav.Link>
           </Nav>
-        </Container>
-      </Navbar>
-
+        </div>
+      </Container>
+    </Navbar>
       <div className="d-flex align-items-center justify-content-center vh-100">
         <div className="text-center">
-          <h1 className="mt-4 outline-text">Publish your passions, your way</h1>
-          <h1 className="mt-4 outline-text">Create a unique and beautiful blog easily.</h1>
+        <h1 className="mt-4">Share Your Confessions</h1>
+        <p className="mt-4">Confess your thoughts and feelings anonymously.</p>
 
-          <button className="btn btn-dark btn-lg mt-5">Create Blog</button>
+          <button className="btn btn-dark btn-lg mt-5">Share your Story</button>
         </div>
       </div>
 
