@@ -1,5 +1,29 @@
 .App {
   text-align: center;
+  position: relative;
+}
+
+ 
+.html {
+  scroll-behavior: smooth;
+}
+
+.App::before {
+  content: "";
+  background: url('https://wallsneedlove.com/cdn/shop/products/w0466_1s_Flowers-_-Skulls-Wallpaper-for-Walls-Buried-Treasure_Repeating-Pattern-Sample-1_6d17f52a-98b6-479d-a813-2a7623cc5350.jpg?v=1604084043') no-repeat center center fixed;
+  background-size: cover;
+  filter: blur(3px); /* Adjust the value to control the blur intensity */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.App {
+  color: white;
+
 }
 
 .App-logo {
@@ -35,4 +59,40 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Define a custom class for the outline */
+.outline-text {
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; /* Adjust the values for the outline effect */
+}
+
+
+/* BlogPost.css */
+
+.d-flex.align-items-center.justify-content-center.vh-100 {
+  scroll-snap-type: y mandatory;
+}
+
+.blog-post {
+  background-image: url('https://wallpapers.com/images/hd/fuchsia-pink-sky-vector-art-zf9zbng9iw9od29y.jpg'); /* Replace 'your-background-image-url.jpg' with your image URL */
+    background-size: cover;
+    
+}
+
+.blog-post{
+  height: fit-content;
+}
+
+.confession-rules{
+
+min-height: fit-content;
+ background-color: #1e1528;
+ background-size: contain;
+ margin-top: 20px;
+ padding: 30px;
+ 
+}
+.confess-form{
+  margin-top: 20px;
+  padding: 30px;
 }
